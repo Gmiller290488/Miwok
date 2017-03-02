@@ -42,13 +42,12 @@ public class NumbersActivity extends AppCompatActivity {
 
 
         LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
-        int index = 0;
-
-        while (index < 10) {
+        for (int index = 0; index < 10; index++) {
             TextView wordView = new TextView(this);
             wordView.setText(words.get(index));
             rootView.addView(wordView);
-            index++;
         }
+
+
     }
 }
